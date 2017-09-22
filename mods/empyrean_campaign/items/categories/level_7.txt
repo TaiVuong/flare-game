@@ -6,11 +6,11 @@ name=Warrior Leather Hood
 INCLUDE items/base/armor/leather/head.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=3
 requires_stat=defense,13
-requires_stat=physical,8
-bonus=poise,10
+requires_stat=physical,5
+bonus=poise,2
 
 [item]
 id=140
@@ -18,11 +18,11 @@ name=Ranger Leather Hood
 INCLUDE items/base/armor/leather/head.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=2,3
 requires_stat=defense,12
-requires_stat=offense,8
-bonus=accuracy,10
+requires_stat=offense,6
+bonus=accuracy,2
 
 [item]
 id=141
@@ -30,11 +30,11 @@ name=Wizard Wool Hood
 INCLUDE items/base/armor/mage/head.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=2
 requires_stat=defense,11
-requires_stat=mental,8
-bonus=mp,10
+requires_stat=mental,7
+bonus=mp,6
 
 [item]
 id=142
@@ -42,10 +42,10 @@ name=Warrior Leather Tunic
 INCLUDE items/base/armor/leather/chest.txt
 level=7
 quality=epic
-price=2400
+price=525
 abs=4
 requires_stat=defense,13
-requires_stat=physical,8
+requires_stat=physical,5
 bonus=hp,125
 
 [item]
@@ -54,11 +54,11 @@ name=Ranger Leather Tunic
 INCLUDE items/base/armor/leather/chest.txt
 level=7
 quality=epic
-price=2400
+price=525
 abs=3,4
 requires_stat=defense,12
-requires_stat=offense,8
-bonus=accuracy,15
+requires_stat=offense,6
+bonus=accuracy,5
 
 [item]
 id=144
@@ -66,10 +66,10 @@ name=Wizard Wool Vest
 INCLUDE items/base/armor/mage/chest.txt
 level=7
 quality=epic
-price=2400
+price=525
 abs=3
 requires_stat=defense,11
-requires_stat=mental,8
+requires_stat=mental,7
 bonus=mp,15
 
 [item]
@@ -78,11 +78,11 @@ name=Warrior Leather Pants
 INCLUDE items/base/armor/leather/legs.txt
 level=7
 quality=epic
-price=1600
+price=350
 abs=3,4
 requires_stat=defense,13
-requires_stat=physical,8
-bonus=poise,15
+requires_stat=physical,5
+bonus=poise,10
 
 [item]
 id=146
@@ -90,11 +90,11 @@ name=Ranger Leather Pants
 INCLUDE items/base/armor/leather/legs.txt
 level=7
 quality=epic
-price=1600
+price=350
 abs=3
 requires_stat=defense,12
-requires_stat=offense,8
-bonus=avoidance,15
+requires_stat=offense,6
+bonus=avoidance,5
 
 [item]
 id=147
@@ -102,10 +102,10 @@ name=Wizard Wool Skirt
 INCLUDE items/base/armor/mage/legs.txt
 level=7
 quality=epic
-price=1600
+price=350
 abs=2,3
 requires_stat=defense,11
-requires_stat=mental,8
+requires_stat=mental,7
 bonus=mp,10
 
 [item]
@@ -114,11 +114,11 @@ name=Warrior Leather Boots
 INCLUDE items/base/armor/leather/feet.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=3
 requires_stat=defense,13
-requires_stat=physical,7
-bonus=poise,10
+requires_stat=physical,5
+bonus=poise,5
 
 [item]
 id=149
@@ -126,11 +126,11 @@ name=Ranger Leather Boots
 INCLUDE items/base/armor/leather/feet.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=2,3
 requires_stat=defense,12
-requires_stat=offense,8
-bonus=avoidance,18
+requires_stat=offense,6
+bonus=avoidance,10
 
 [item]
 id=150
@@ -138,10 +138,10 @@ name=Wizard Wool Boots
 INCLUDE items/base/armor/mage/feet.txt
 level=7
 quality=epic
-price=1200
+price=210
 abs=2
 requires_stat=defense,11
-requires_stat=mental,8
+requires_stat=mental,7
 bonus=mp_regen,5
 
 [item]
@@ -150,10 +150,10 @@ name=Warrior Leather Gloves
 INCLUDE items/base/armor/leather/hands.txt
 level=7
 quality=epic
-price=800
+price=175
 abs=3
 requires_stat=defense,13
-requires_stat=physical,8
+requires_stat=physical,5
 bonus=crit,5
 
 [item]
@@ -162,10 +162,10 @@ name=Ranger Leather Gloves
 INCLUDE items/base/armor/leather/hands.txt
 level=7
 quality=epic
-price=800
+price=175
 abs=2,3
 requires_stat=defense,12
-requires_stat=offense,8
+requires_stat=offense,6
 bonus=accuracy,10
 
 [item]
@@ -174,43 +174,43 @@ name=Wizard Wool Sleeves
 INCLUDE items/base/armor/mage/hands.txt
 level=7
 quality=epic
-price=800
+price=175
 abs=2
 requires_stat=defense,11
-requires_stat=mental,8
+requires_stat=mental,7
 bonus=mp_regen,10
 
 [item]
 id=154
-name=Warrior Leather Belt
+name=Adventurer Fighting Leather Belt
 INCLUDE items/base/armor/belt.txt
 level=7
 quality=epic
-price=1600
+price=350
 requires_stat=defense,13
-requires_stat=physical,8
+requires_stat=physical,5
 bonus=hp_regen,125
 
 [item]
 id=155
-name=Ranger Leather Belt
-INCLUDE items/base/armor/belt.txt
+name=Adventurer Recon Pendant
+INCLUDE items/base/necklaces/gold_1.txt
 level=7
 quality=epic
-price=1600
+price=350
 requires_stat=defense,12
-requires_stat=offense,8
-bonus=avoidance,15
+requires_stat=offense,6
+bonus=avoidance,5
 
 [item]
 id=156
-name=Wizard Leather Belt
-INCLUDE items/base/armor/belt.txt
+name=Adventurer Sorcerer Spellbook
+INCLUDE items/base/misc/spellbook.txt
 level=7
 quality=epic
-price=1600
+price=350
 requires_stat=defense,11
-requires_stat=mental,8
+requires_stat=mental,7
 bonus=mp_regen,10
 
 [item]
@@ -219,9 +219,9 @@ name=Warrior Shortsword
 INCLUDE items/base/weapons/melee/shortsword.txt
 level=7
 quality=epic
+price=700
 dmg_melee=45,50
-requires_stat=physical,19
-price=3200
+requires_stat=physical,17
 bonus=dmg_melee_min,10
 bonus=dmg_melee_max,10
 
@@ -231,9 +231,9 @@ name=Ranger Shortbow
 INCLUDE items/base/weapons/ranged/shortbow.txt
 level=7
 quality=epic
-dmg_ranged=60,65
-requires_stat=offense,19
-price=3200
+price=700
+dmg_ranged=45,50
+requires_stat=offense,17
 bonus=dmg_ranged_min,10
 bonus=dmg_ranged_max,10
 
@@ -243,9 +243,9 @@ name=Wizard Rod
 INCLUDE items/base/weapons/magic/rod.txt
 level=7
 quality=epic
+price=700
 dmg_ment=45,50
-requires_stat=mental,19
-price=3200
+requires_stat=mental,17
 bonus=dmg_ment_min,10
 bonus=dmg_ment_max,10
 
@@ -255,9 +255,9 @@ name=Paladin Iron Buckler
 INCLUDE items/base/shields/iron.txt
 level=7
 quality=epic
-abs=2,3
-requires_stat=defense,17
-price=2400
+price=525
+abs=6,7
+requires_stat=defense,15
 bonus=absorb_max,2
 
 [item]
@@ -266,8 +266,9 @@ name=Adventurer Burn Ring
 INCLUDE items/base/rings/gold_5.txt
 level=7
 quality=epic
-price=5600
-bonus=fire_resist,25
+price=700
+requires_level=5
+bonus=fire_resist,10
 
 [item]
 id=162
@@ -275,8 +276,9 @@ name=Adventurer Frost Ring
 INCLUDE items/base/rings/silver_4.txt
 level=7
 quality=epic
-price=5600
-bonus=ice_resist,25
+price=700
+requires_level=5
+bonus=ice_resist,10
 
 [item]
 id=163
@@ -284,8 +286,9 @@ name=Adventurer Electric Ring
 INCLUDE items/base/rings/silver_5.txt
 level=7
 quality=epic
-price=5600
-bonus=lightning_resist,25
+price=700
+requires_level=5
+bonus=lightning_resist,10
 
 [item]
 id=164
@@ -293,8 +296,9 @@ name=Adventurer Shadow Ring
 INCLUDE items/base/rings/gold_3.txt
 level=7
 quality=epic
-price=5600
-bonus=dark_resist,25
+price=700
+requires_level=5
+bonus=dark_resist,10
 
 [item]
 id=165
@@ -302,8 +306,9 @@ name=Adventurer Knowledge Ring
 INCLUDE items/base/rings/silver_2.txt
 level=7
 quality=epic
-price=5600
-bonus=xp_gain,25
+price=700
+requires_level=5
+bonus=xp_gain,5
 
 [item]
 id=166
@@ -311,8 +316,9 @@ name=Adventurer Prosperity Ring
 INCLUDE items/base/rings/gold_2.txt
 level=7
 quality=epic
-price=5600
-bonus=currency_find,25
+price=700
+requires_level=5
+bonus=currency_find,10
 
 [item]
 id=167
@@ -320,6 +326,7 @@ name=Adventurer Loot Ring
 INCLUDE items/base/rings/gold_4.txt
 level=7
 quality=epic
-price=5600
+price=700
+requires_level=5
 bonus=item_find,25
 

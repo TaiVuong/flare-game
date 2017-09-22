@@ -7,26 +7,31 @@ rarity=uncommon
 xp=4
 
 # combat stats
-hp=100
-speed=2
+stat=hp,75
+speed=2.6
 turn_delay=400ms
-chance_pursue=15
 
-power=melee,164,5
-power=ranged,165,3
+stat=accuracy,90
+stat=avoidance,15
+stat=poise,13
 
-accuracy=90
-avoidance=15
-poise=13
-
-dmg_melee_min=40
-dmg_melee_max=45
-dmg_ranged_min=45
-dmg_ranged_max=50
-cooldown=2000ms
-absorb_min=1
-absorb_max=2
+stat=dmg_melee_min,25
+stat=dmg_melee_max,30
+stat=dmg_ranged_min,30
+stat=dmg_ranged_max,35
+cooldown=1775ms
+stat=absorb_min,1
+stat=absorb_max,2
 
 # loot
 loot=loot/level_2.txt
 
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=2
+chance_flee=20
+flee_duration=3s
+flee_cooldown=1s
+flee_range=6
+threat_range=10
+power=melee,164,5
+power=ranged,165,40

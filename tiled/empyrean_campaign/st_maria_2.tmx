@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="isometric" renderorder="right-down" width="70" height="70" tilewidth="64" tileheight="32" backgroundcolor="#000000" nextobjectid="95">
  <properties>
+  <property name="hero_pos" value="33,7"/>
   <property name="music" value="music/dungeon_theme.ogg"/>
   <property name="tileset" value="tilesetdefs/tileset_dungeon.txt"/>
   <property name="title" value="St. Maria: Prison"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15">
+ <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
   <image source="../dungeon/tiled_collision.png" width="960" height="32"/>
  </tileset>
- <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240">
+ <tileset firstgid="16" name="dungeon" tilewidth="64" tileheight="128" tilecount="240" columns="16">
   <image source="../dungeon/tiled_dungeon.png" width="1024" height="1920"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8">
+ <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
   <image source="../dungeon/set_rules.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16">
+ <tileset firstgid="264" name="tiled_dungeon_2x2" tilewidth="128" tileheight="64" tilecount="16" columns="4">
   <tileoffset x="0" y="16"/>
   <image source="../dungeon/tiled_dungeon_2x2.png" width="512" height="256"/>
  </tileset>
- <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2">
+ <tileset firstgid="280" name="door_left" tilewidth="64" tileheight="128" tilecount="2" columns="2">
   <tileoffset x="-16" y="-8"/>
   <image source="../dungeon/door_left.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2">
+ <tileset firstgid="282" name="door_right" tilewidth="64" tileheight="128" tilecount="2" columns="2">
   <tileoffset x="16" y="-8"/>
   <image source="../dungeon/door_right.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4">
+ <tileset firstgid="284" name="stairs" tilewidth="256" tileheight="256" tilecount="4" columns="4">
   <tileoffset x="0" y="48"/>
   <image source="../dungeon/stairs.png" width="1024" height="256"/>
  </tileset>
@@ -120,7 +121,7 @@
 0,0,0,0,0,0,68,0,0,0,0,82,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,64,0,0,0,0,82,0,0,0,0,0,0,0,0,0,0,0,0,0,0,106,0,0,0,0,91,83,83,83,83,83,83,88,0,0,0,0,82,0,0,
 0,0,0,0,0,0,102,0,0,0,0,82,0,0,0,0,0,0,77,69,105,65,65,78,77,69,103,65,99,69,73,0,0,0,0,90,81,105,99,69,65,78,77,65,105,65,97,78,0,0,68,0,0,0,0,82,0,0,0,0,0,0,80,0,0,0,0,82,0,0,
 0,0,0,0,0,0,106,0,0,0,0,82,0,0,0,0,0,0,64,202,203,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,64,202,203,0,0,66,0,0,104,120,123,118,0,82,0,0,0,0,0,0,68,0,0,0,0,82,0,0,
-0,0,0,0,0,0,108,0,0,0,0,82,0,0,0,0,0,0,108,0,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,96,183,0,0,0,66,0,0,64,0,0,0,0,82,0,0,0,0,0,0,98,0,179,183,0,82,0,0,
+0,0,0,0,0,0,108,0,0,0,0,82,0,0,0,0,0,0,108,163,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,96,183,0,0,0,66,0,0,64,0,0,0,0,82,0,0,0,0,0,0,98,0,179,183,0,82,0,0,
 0,0,0,0,0,0,64,0,0,0,0,82,0,0,0,0,0,0,68,0,0,0,0,66,102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,108,0,0,0,0,66,0,0,108,0,0,0,0,82,0,0,0,0,0,0,64,0,0,0,0,82,0,0,
 0,0,77,69,107,105,73,0,0,0,0,82,0,0,0,0,0,0,96,0,0,0,0,116,112,0,0,0,0,0,111,0,0,0,0,111,0,0,0,0,0,116,112,0,0,0,0,66,0,0,102,0,0,0,0,82,0,0,0,0,0,0,102,0,0,0,0,82,0,0,
 0,0,64,176,0,0,0,0,0,0,0,82,0,0,0,0,0,0,64,0,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,104,0,0,0,0,66,0,0,68,0,120,123,118,82,0,0,0,0,0,0,96,0,0,0,0,82,0,0,
@@ -136,7 +137,7 @@
 0,0,64,0,0,0,0,82,0,0,0,0,0,0,0,0,0,0,76,67,72,0,75,79,106,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,76,67,67,67,67,79,0,0,104,0,0,0,0,82,0,0,0,0,0,0,68,128,0,0,130,82,0,0,
 0,0,102,0,0,0,0,90,81,109,103,65,105,103,65,78,0,0,77,105,73,0,74,78,104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,77,65,97,109,69,78,0,0,96,0,0,0,0,82,0,0,0,0,0,0,102,151,0,0,151,82,0,0,
 0,0,98,0,0,0,0,0,0,0,0,0,0,180,0,70,0,0,96,0,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,96,202,203,0,0,66,0,0,64,0,0,0,0,82,0,0,0,0,0,0,108,0,0,0,0,82,0,0,
-0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,108,182,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,68,0,0,0,182,74,105,103,73,0,0,0,0,82,0,0,0,0,0,0,64,0,0,0,0,82,0,0,
+0,0,64,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,108,182,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,66,68,162,0,0,182,74,105,103,73,0,0,0,0,82,0,0,0,0,0,0,64,0,0,0,0,82,0,0,
 0,0,106,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,64,0,0,0,0,66,102,0,0,0,0,0,0,75,67,67,72,0,0,0,0,0,0,66,68,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,0,0,0,0,106,0,0,0,0,82,0,0,
 0,0,68,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,68,0,0,0,0,116,112,0,0,0,0,0,0,66,0,0,64,0,0,0,0,0,0,116,114,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,0,0,0,0,68,0,0,0,0,82,0,0,
 0,0,76,71,83,83,83,83,83,83,88,0,0,0,0,82,0,0,104,202,203,0,0,66,68,0,0,0,0,0,0,66,0,0,64,0,0,0,0,0,0,66,96,0,0,0,0,0,0,0,0,0,0,0,0,82,0,0,0,0,0,0,102,0,0,178,176,82,0,0,
@@ -194,7 +195,7 @@
 3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,1,1,1,1,1,1,0,0,0,0,1,3,3,
 3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,4,4,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,4,4,0,0,1,3,3,1,4,4,4,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
-3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
+3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,4,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,4,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,3,3,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,1,1,1,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,2,2,2,2,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,4,4,4,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
@@ -203,14 +204,14 @@
 3,3,1,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,0,0,0,1,1,1,1,1,3,3,3,3,3,3,1,4,0,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,4,4,4,0,1,3,3,3,3,3,3,1,4,0,0,4,1,3,3,
 3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,1,4,0,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,3,0,0,3,1,3,3,
-3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,1,0,4,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,4,1,3,3,
+3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,1,0,2,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,4,1,3,3,
 3,3,1,0,1,1,0,1,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,1,1,0,1,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,4,4,4,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,4,0,0,1,3,3,3,3,3,3,3,3,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,4,0,0,0,1,3,3,
 3,3,1,0,0,0,0,1,3,3,3,3,3,3,3,3,3,3,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,3,0,0,3,1,3,3,
 3,3,1,0,0,0,0,1,1,1,1,1,1,1,1,1,3,3,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,4,0,0,4,1,3,3,
 3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,4,4,0,0,1,3,3,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
-3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
+3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,4,0,0,0,1,1,1,1,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,1,1,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
 3,3,1,1,1,1,1,1,1,1,1,0,0,0,0,1,3,3,1,4,4,0,0,1,1,0,0,0,0,0,0,1,3,3,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,1,3,3,3,3,3,3,1,0,0,0,0,1,3,3,
@@ -253,24 +254,27 @@
 </data>
  </layer>
  <objectgroup name="event">
-  <object id="1" name="to St. Maria: Mausoleum" type="on_trigger" x="1024" y="192" width="64" height="32">
+  <object id="1" name="to St. Maria: Mausoleum" type="event" x="1024" y="192" width="64" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/st_maria_1.txt,39,14"/>
     <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
     <property name="tooltip" value="St. Maria: Mausoleum"/>
    </properties>
   </object>
-  <object id="2" name="to Hyperspace" type="on_trigger" x="1376" y="672" width="64" height="64">
+  <object id="2" name="to Hyperspace" type="event" x="1376" y="672" width="64" height="64">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/hyperspace.txt,28,11"/>
     <property name="soundfx" value="soundfx/environment/teleporter.ogg,0,0"/>
     <property name="tooltip" value="Hyperspace"/>
    </properties>
   </object>
-  <object id="3" name="Unlock waypoint" type="on_trigger" x="1344" y="672" width="128" height="160">
+  <object id="3" name="Unlock waypoint" type="event" x="1344" y="672" width="128" height="160">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="mapmod" value="background,43,22,265"/>
     <property name="msg" value="St. Maria: Prison waypoint discovered."/>
     <property name="repeat" value="false"/>
@@ -278,14 +282,16 @@
     <property name="set_status" value="emp_waypoint_3"/>
    </properties>
   </object>
-  <object id="4" name="unlock waypoint (on_load)" type="on_load" x="1472" y="608" width="32" height="32">
+  <object id="4" name="unlock waypoint (on_load)" type="event" x="1472" y="608" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="mapmod" value="background,43,22,265"/>
     <property name="requires_status" value="emp_waypoint_3"/>
    </properties>
   </object>
-  <object id="5" name="open loop door" type="on_trigger" x="1536" y="1888" width="32" height="32">
+  <object id="5" name="open loop door" type="event" x="1536" y="1888" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="mapmod" value="collision,45,50,0;collision,46,50,0;collision,45,44,0;collision,46,44,0;object,45,50,0;object,46,50,0;object,45,44,0;object,46,44,0;object,48,59,166;background,45,45,51;background,45,46,51;background,45,47,51;background,45,48,51;background,45,49,51;background,46,45,51;background,46,46,51;background,46,47,51;background,46,48,51;background,46,49,51;collision,45,45,0;collision,45,46,0;collision,45,47,0;collision,45,48,0;collision,45,49,0;collision,46,45,0;collision,46,46,0;collision,46,47,0;collision,46,48,0;collision,46,49,0"/>
     <property name="repeat" value="false"/>
@@ -293,22 +299,25 @@
     <property name="tooltip" value="Switch"/>
    </properties>
   </object>
-  <object id="7" name="Locked Door" type="on_trigger" x="864" y="1600" width="64" height="64">
+  <object id="7" name="Locked Door" type="event" x="864" y="1600" width="64" height="64">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="msg" value="This door needs a key to be opened."/>
     <property name="requires_not_status" value="emp_stmaria2_key;emp_stmaria2_door"/>
     <property name="tooltip" value="Locked Door"/>
    </properties>
   </object>
-  <object id="8" name="Unlock Door (on_load)" type="on_load" x="832" y="1696" width="32" height="32">
+  <object id="8" name="Unlock Door (on_load)" type="event" x="832" y="1696" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="mapmod" value="collision,27,50,0;collision,28,50,0;collision,27,51,0;collision,28,51,0;object,28,50,0;object,28,51,0;object,27,49,213;object,27,52,219"/>
     <property name="requires_status" value="emp_stmaria2_door"/>
    </properties>
   </object>
-  <object id="9" name="Unlock Door" type="on_trigger" x="832" y="1760" width="32" height="32">
+  <object id="9" name="Unlock Door" type="event" x="832" y="1760" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="27,50,2,2"/>
     <property name="mapmod" value="collision,27,50,0;collision,28,50,0;collision,27,51,0;collision,28,51,0;object,28,50,0;object,28,51,0;object,27,49,213;object,27,52,219"/>
     <property name="remove_item" value="1005"/>
@@ -319,14 +328,16 @@
     <property name="tooltip" value="Locked Door"/>
    </properties>
   </object>
-  <object id="36" type="on_load" x="1088" y="96" width="32" height="32">
+  <object id="36" type="event" x="1088" y="96" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="requires_not_status" value="emp_stmaria2_init"/>
     <property name="set_status" value="emp_stmaria2_init"/>
    </properties>
   </object>
-  <object id="38" type="on_trigger" x="1248" y="1920" width="32" height="32">
+  <object id="38" type="event" x="1248" y="1920" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="loot_count" value="3,4"/>
@@ -336,8 +347,9 @@
     <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
-  <object id="39" type="on_trigger" x="1248" y="1824" width="32" height="32">
+  <object id="39" type="event" x="1248" y="1824" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="loot_count" value="3,4"/>
@@ -347,8 +359,9 @@
     <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
-  <object id="40" type="on_trigger" x="1632" y="1248" width="32" height="32">
+  <object id="40" type="event" x="1632" y="1248" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,51,39,163"/>
@@ -357,8 +370,9 @@
     <property name="tooltip" value="Crate"/>
    </properties>
   </object>
-  <object id="41" type="on_trigger" x="1696" y="256" width="32" height="32">
+  <object id="41" type="event" x="1696" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,53,8,162"/>
@@ -367,8 +381,9 @@
     <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
-  <object id="42" type="on_trigger" x="608" y="1248" width="32" height="32">
+  <object id="42" type="event" x="608" y="1248" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,19,39,163"/>
@@ -377,8 +392,9 @@
     <property name="tooltip" value="Crate"/>
    </properties>
   </object>
-  <object id="43" type="on_trigger" x="128" y="832" width="32" height="32">
+  <object id="43" type="event" x="128" y="832" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,4,26,162"/>
@@ -387,33 +403,39 @@
     <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
-  <object id="44" name="brazier sound effect" type="on_load" x="1152" y="224" width="32" height="32">
+  <object id="44" name="brazier sound effect" type="event" x="1152" y="224" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
-  <object id="45" name="brazier sound effect" type="on_load" x="928" y="224" width="32" height="32">
+  <object id="45" name="brazier sound effect" type="event" x="928" y="224" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
-  <object id="46" name="brazier sound effect" type="on_load" x="512" y="224" width="32" height="32">
+  <object id="46" name="brazier sound effect" type="event" x="512" y="224" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
-  <object id="47" name="brazier sound effect" type="on_load" x="512" y="64" width="32" height="32">
+  <object id="47" name="brazier sound effect" type="event" x="512" y="64" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
-  <object id="50" name="Wind sound" type="on_load" x="0" y="0" width="32" height="32">
+  <object id="50" name="Wind sound" type="event" x="0" y="0" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
    </properties>
   </object>
-  <object id="51" type="on_trigger" x="1696" y="1888" width="32" height="32">
+  <object id="51" type="event" x="1696" y="1888" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,53,59,162"/>
@@ -422,117 +444,120 @@
     <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
-  <object id="52" name="brazier sound effect" type="on_load" x="1728" y="1824" width="32" height="32">
+  <object id="52" name="brazier sound effect" type="event" x="1728" y="1824" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/open_fire_loop.ogg"/>
    </properties>
   </object>
-  <object id="53" name="to St. Maria: Crypt" type="on_trigger" x="544" y="96" width="128" height="128">
+  <object id="53" name="to St. Maria: Crypt" type="event" x="544" y="96" width="128" height="128">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="intermap" value="maps/st_maria_3.txt,7,47"/>
     <property name="soundfx" value="soundfx/environment/stairs.ogg,0,0"/>
     <property name="tooltip" value="St. Maria: Crypt"/>
    </properties>
   </object>
-  <object id="54" name="floor spikes" type="on_trigger" x="1760" y="256" width="32" height="32">
+  <object id="54" name="floor spikes" type="event" x="1760" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="78" name="floor spikes" type="on_trigger" x="1792" y="256" width="32" height="32">
+  <object id="78" name="floor spikes" type="event" x="1792" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="79" name="floor spikes" type="on_trigger" x="1792" y="288" width="32" height="32">
+  <object id="79" name="floor spikes" type="event" x="1792" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="80" name="floor spikes" type="on_trigger" x="1760" y="288" width="32" height="32">
+  <object id="80" name="floor spikes" type="event" x="1760" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="81" name="floor spikes" type="on_trigger" x="1856" y="256" width="32" height="32">
+  <object id="81" name="floor spikes" type="event" x="1856" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="82" name="floor spikes" type="on_trigger" x="1888" y="256" width="32" height="32">
+  <object id="82" name="floor spikes" type="event" x="1888" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="83" name="floor spikes" type="on_trigger" x="1856" y="288" width="32" height="32">
+  <object id="83" name="floor spikes" type="event" x="1856" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="84" name="floor spikes" type="on_trigger" x="1888" y="288" width="32" height="32">
+  <object id="84" name="floor spikes" type="event" x="1888" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="85" name="floor spikes" type="on_trigger" x="1952" y="256" width="32" height="32">
+  <object id="85" name="floor spikes" type="event" x="1952" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="86" name="floor spikes" type="on_trigger" x="1984" y="256" width="32" height="32">
+  <object id="86" name="floor spikes" type="event" x="1984" y="256" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="87" name="floor spikes" type="on_trigger" x="1952" y="288" width="32" height="32">
+  <object id="87" name="floor spikes" type="event" x="1952" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="88" name="floor spikes" type="on_trigger" x="1984" y="288" width="32" height="32">
+  <object id="88" name="floor spikes" type="event" x="1984" y="288" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="cooldown" value="3s"/>
-    <property name="hotspot" value="location"/>
     <property name="power" value="178"/>
     <property name="power_damage" value="70,80"/>
    </properties>
   </object>
-  <object id="91" type="on_trigger" x="2016" y="832" width="32" height="32">
+  <object id="91" type="event" x="2016" y="832" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,63,26,162"/>
@@ -541,8 +566,9 @@
     <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
-  <object id="92" type="on_trigger" x="2112" y="736" width="32" height="32">
+  <object id="92" type="event" x="2112" y="736" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_3.txt"/>
     <property name="mapmod" value="object,66,23,163"/>
@@ -553,161 +579,184 @@
   </object>
  </objectgroup>
  <objectgroup name="enemy">
-  <object id="12" type="undead" x="992" y="864" width="128" height="128">
+  <object id="12" type="enemy" x="992" y="864" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="13" type="undead" x="1152" y="1088" width="128" height="256">
+  <object id="13" type="enemy" x="1152" y="1088" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="14" type="undead" x="832" y="1088" width="128" height="256">
+  <object id="14" type="enemy" x="832" y="1088" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="15" type="undead" x="608" y="448" width="64" height="96">
+  <object id="15" type="enemy" x="608" y="448" width="64" height="96">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="1"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="16" type="undead" x="1376" y="448" width="64" height="96">
+  <object id="16" type="enemy" x="1376" y="448" width="64" height="96">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="1"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="17" type="undead" x="608" y="1184" width="64" height="192">
+  <object id="17" type="enemy" x="608" y="1184" width="64" height="192">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="1,2"/>
    </properties>
   </object>
-  <object id="18" type="undead" x="832" y="704" width="128" height="256">
+  <object id="18" type="enemy" x="832" y="704" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="19" type="undead" x="992" y="1568" width="128" height="128">
+  <object id="19" type="enemy" x="992" y="1568" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="20" type="undead" x="1504" y="992" width="256" height="128">
+  <object id="20" type="enemy" x="1504" y="992" width="256" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2,3"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="23" type="undead" x="2016" y="544" width="128" height="512">
+  <object id="23" type="enemy" x="2016" y="544" width="128" height="512">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="3"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="24" type="undead" x="1760" y="1248" width="256" height="128">
+  <object id="24" type="enemy" x="1760" y="1248" width="256" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2,3"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="26" type="undead" x="1760" y="1824" width="128" height="128">
+  <object id="26" type="enemy" x="1760" y="1824" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="27" type="undead" x="1248" y="1696" width="128" height="128">
+  <object id="27" type="enemy" x="1248" y="1696" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="28" type="undead" x="1248" y="1952" width="128" height="128">
+  <object id="28" type="enemy" x="1248" y="1952" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="29" type="undead" x="1504" y="2016" width="128" height="128">
+  <object id="29" type="enemy" x="1504" y="2016" width="128" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="30" type="undead" x="576" y="1568" width="256" height="128">
+  <object id="30" type="enemy" x="576" y="1568" width="256" height="128">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="31" type="undead" x="352" y="1440" width="128" height="256">
+  <object id="31" type="enemy" x="352" y="1440" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="32" type="undead" x="352" y="928" width="128" height="256">
+  <object id="32" type="enemy" x="352" y="928" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="33" type="undead" x="96" y="672" width="128" height="256">
+  <object id="33" type="enemy" x="96" y="672" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="3"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="34" type="undead" x="224" y="288" width="128" height="256">
+  <object id="34" type="enemy" x="224" y="288" width="128" height="256">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="37" type="cid" x="1472" y="1888" width="32" height="32">
+  <object id="37" type="enemy" x="1472" y="1888" width="32" height="32">
    <properties>
+    <property name="category" value="cid"/>
     <property name="number" value="1"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="89" type="undead" x="1632" y="288" width="128" height="544">
+  <object id="89" type="enemy" x="1632" y="288" width="128" height="544">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="3"/>
     <property name="wander_radius" value="2"/>
    </properties>
   </object>
-  <object id="94" type="undead" x="1408" y="1632" width="128" height="64">
+  <object id="94" type="enemy" x="1408" y="1632" width="128" height="64">
    <properties>
+    <property name="category" value="undead"/>
     <property name="level" value="3"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="2"/>
@@ -715,6 +764,10 @@
   </object>
  </objectgroup>
  <objectgroup name="npc">
-  <object id="6" type="npcs/yora.txt" x="640" y="736" width="32" height="32"/>
+  <object id="6" type="npc" x="640" y="736" width="32" height="32">
+   <properties>
+    <property name="filename" value="npcs/yora.txt"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

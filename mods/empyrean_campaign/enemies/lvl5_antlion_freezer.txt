@@ -2,37 +2,41 @@ INCLUDE enemies/base/antlion_ice.txt
 
 name=Antlion Freezer
 level=5
-categories=antlion,ice,snowplains
+categories=antlion,antlion_ice,ice,snowplains
 rarity=uncommon
 xp=32
 
 # combat stats
-hp=240
-speed=5
+stat=hp,140
+speed=4.4
 turn_delay=200ms
 
-chance_pursue=10
+stat=accuracy,105
+stat=avoidance,45
+stat=poise,22
 
-power=melee,164,1
-power=ranged,172,5
+stat=absorb_min,5
+stat=absorb_max,6
 
-accuracy=105
-avoidance=45
-poise=22
+stat=dmg_melee_min,65
+stat=dmg_melee_max,70
+stat=dmg_ment_min,80
+stat=dmg_ment_max,85
 
-absorb_min=5
-absorb_max=6
+vulnerable=fire,150
+vulnerable=ice,75
 
-dmg_melee_min=65
-dmg_melee_max=70
-dmg_ment_min=80
-dmg_ment_max=90
-
-vulnerable_fire=200
-vulnerable_ice=50
-
-cooldown=2000ms
+cooldown=1500ms
 
 # loot
 loot=loot/level_5.txt
 
+# Ranged units behaviour, see docs/ranged_behavior.txt
+chance_pursue=6
+chance_flee=13
+flee_duration=2s
+flee_cooldown=1s
+flee_range=5
+threat_range=8,16
+power=melee,164,10
+power=ranged,172,50

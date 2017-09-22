@@ -6,9 +6,8 @@ name=Fighting Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=2
 quality=high
-price=300
+price=150
 abs=1,2
-requires_stat=physical,2
 bonus=hp,25
 
 [item]
@@ -17,10 +16,9 @@ name=Recon Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=2
 quality=high
-price=300
+price=150
 abs=1
-requires_stat=offense,2
-bonus=accuracy,3
+bonus=accuracy,1
 
 [item]
 id=14
@@ -28,9 +26,8 @@ name=Sorcerer Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=2
 quality=high
-price=300
+price=150
 abs=0,1
-requires_stat=mental,2
 bonus=mp,3
 
 [item]
@@ -39,10 +36,9 @@ name=Fighting Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=2
 quality=high
-price=200
+price=100
 abs=1
-requires_stat=physical,2
-bonus=poise,3
+bonus=poise,2
 
 [item]
 id=16
@@ -50,10 +46,9 @@ name=Recon Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=2
 quality=high
-price=200
+price=100
 abs=0,1
-requires_stat=offense,2
-bonus=avoidance,3
+bonus=avoidance,1
 
 [item]
 id=17
@@ -61,9 +56,8 @@ name=Sorcerer Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=2
 quality=high
-price=200
+price=100
 bonus=mp,2
-requires_stat=mental,2
 
 [item]
 id=18
@@ -71,10 +65,9 @@ name=Fighting Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=2
 quality=high
-price=150
+price=60
 abs=0,1
-requires_stat=physical,2
-bonus=poise,2
+bonus=poise,1
 
 [item]
 id=19
@@ -82,9 +75,8 @@ name=Recon Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=2
 quality=high
-price=150
-requires_stat=offense,2
-bonus=avoidance,4
+price=60
+bonus=avoidance,2
 
 [item]
 id=20
@@ -92,9 +84,8 @@ name=Sorcerer Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=2
 quality=high
-price=150
+price=60
 bonus=mp_regen,1
-requires_stat=mental,2
 
 [item]
 id=21
@@ -102,9 +93,8 @@ name=Fighting Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=2
 quality=high
-price=100
+price=50
 abs=0,1
-requires_stat=physical,2
 bonus=crit,1
 
 [item]
@@ -113,8 +103,7 @@ name=Recon Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=2
 quality=high
-price=100
-requires_stat=offense,2
+price=50
 bonus=accuracy,2
 
 [item]
@@ -123,39 +112,35 @@ name=Sorcerer Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=2
 quality=high
-price=100
+price=50
 bonus=mp_regen,2
-requires_stat=mental,2
 
 [item]
 id=24
-name=Fighting Cloth Sash
+name=Wandering Leather Belt
 INCLUDE items/base/armor/belt.txt
 level=2
 quality=high
-price=200
-requires_stat=physical,2
+price=100
 bonus=hp_regen,25
 
 [item]
 id=25
-name=Recon Cloth Sash
-INCLUDE items/base/armor/belt.txt
+name=Wandering Pendant
+INCLUDE items/base/necklaces/gold_1.txt
 level=2
 quality=high
-price=200
-requires_stat=offense,2
-bonus=avoidance,3
+price=100
+bonus=avoidance,1
 
 [item]
 id=26
-name=Sorcerer Cloth Sash
-INCLUDE items/base/armor/belt.txt
+name=Wandering Spellbook
+INCLUDE items/base/misc/spellbook.txt
 level=2
 quality=high
-price=200
+price=100
 bonus=mp_regen,2
-requires_stat=mental,2
 
 [item]
 id=27
@@ -163,9 +148,9 @@ name=Fighting Dagger
 INCLUDE items/base/weapons/melee/dagger.txt
 level=2
 quality=high
-price=400
+price=200
 dmg_melee=25,30
-requires_stat=physical,4
+requires_stat=physical,2
 bonus=dmg_melee_min,5
 bonus=dmg_melee_max,5
 
@@ -175,9 +160,9 @@ name=Recon Slingshot
 INCLUDE items/base/weapons/ranged/slingshot.txt
 level=2
 quality=high
-price=400
-dmg_ranged=40,45
-requires_stat=offense,4
+price=200
+dmg_ranged=25,30
+requires_stat=offense,2
 bonus=dmg_ranged_min,5
 bonus=dmg_ranged_max,5
 
@@ -187,9 +172,9 @@ name=Sorcerer Wand
 INCLUDE items/base/weapons/magic/wand.txt
 level=2
 quality=high
-price=400
+price=200
 dmg_ment=25,30
-requires_stat=mental,4
+requires_stat=mental,2
 bonus=dmg_ment_min,5
 bonus=dmg_ment_max,5
 
@@ -199,9 +184,8 @@ name=Keeper Wood Buckler
 INCLUDE items/base/shields/wood.txt
 level=2
 quality=high
+price=150
 abs=1
-requires_stat=defense,2
-price=300
 bonus=absorb_max,1
 
 [item]
@@ -210,8 +194,8 @@ name=Wandering Fire Ring
 INCLUDE items/base/rings/gold_5.txt
 level=2
 quality=high
-price=700
-bonus=fire_resist,5
+price=200
+bonus=fire_resist,2
 
 [item]
 id=32
@@ -219,8 +203,8 @@ name=Wandering Ice Ring
 INCLUDE items/base/rings/silver_4.txt
 level=2
 quality=high
-price=700
-bonus=ice_resist,5
+price=200
+bonus=ice_resist,2
 
 [item]
 id=33
@@ -228,8 +212,8 @@ name=Wandering Lightning Ring
 INCLUDE items/base/rings/silver_5.txt
 level=2
 quality=high
-price=700
-bonus=lightning_resist,5
+price=200
+bonus=lightning_resist,2
 
 [item]
 id=34
@@ -237,8 +221,8 @@ name=Wandering Dark Ring
 INCLUDE items/base/rings/gold_3.txt
 level=2
 quality=high
-price=700
-bonus=dark_resist,5
+price=200
+bonus=dark_resist,2
 
 [item]
 id=35
@@ -246,8 +230,8 @@ name=Wandering Experience Ring
 INCLUDE items/base/rings/silver_2.txt
 level=2
 quality=high
-price=700
-bonus=xp_gain,5
+price=200
+bonus=xp_gain,1
 
 [item]
 id=36
@@ -255,8 +239,8 @@ name=Wandering Wealth Ring
 INCLUDE items/base/rings/gold_2.txt
 level=2
 quality=high
-price=700
-bonus=currency_find,5
+price=200
+bonus=currency_find,2
 
 [item]
 id=37
@@ -264,6 +248,6 @@ name=Wandering Treasure Ring
 INCLUDE items/base/rings/gold_4.txt
 level=2
 quality=high
-price=700
+price=200
 bonus=item_find,5
 

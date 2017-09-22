@@ -6,10 +6,10 @@ name=Warlord Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=4
 quality=rare
-price=1200
+price=300
 abs=2,3
-requires_stat=defense,6
-requires_stat=physical,4
+requires_stat=defense,4
+requires_stat=physical,2
 bonus=hp,75
 
 [item]
@@ -18,11 +18,11 @@ name=Sniper Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=4
 quality=rare
-price=1200
+price=300
 abs=2
-requires_stat=defense,6
-requires_stat=offense,4
-bonus=accuracy,9
+requires_stat=defense,3
+requires_stat=offense,3
+bonus=accuracy,3
 
 [item]
 id=66
@@ -30,9 +30,9 @@ name=Archwizard Cloth Shirt
 INCLUDE items/base/armor/cloth/chest.txt
 level=4
 quality=rare
-price=1200
+price=300
 abs=1,2
-requires_stat=defense,6
+requires_stat=defense,2
 requires_stat=mental,4
 bonus=mp,9
 
@@ -42,11 +42,11 @@ name=Warlord Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=4
 quality=rare
-price=800
+price=200
 abs=2
-requires_stat=defense,6
-requires_stat=physical,4
-bonus=poise,9
+requires_stat=defense,4
+requires_stat=physical,2
+bonus=poise,6
 
 [item]
 id=68
@@ -54,11 +54,11 @@ name=Sniper Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=4
 quality=rare
-price=800
+price=200
 abs=1,2
-requires_stat=defense,6
-requires_stat=offense,4
-bonus=avoidance,9
+requires_stat=defense,3
+requires_stat=offense,3
+bonus=avoidance,3
 
 [item]
 id=69
@@ -66,9 +66,9 @@ name=Archwizard Cloth Pants
 INCLUDE items/base/armor/cloth/legs.txt
 level=4
 quality=rare
-price=800
+price=200
 abs=1
-requires_stat=defense,6
+requires_stat=defense,2
 requires_stat=mental,4
 bonus=mp,6
 
@@ -78,11 +78,11 @@ name=Warlord Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=4
 quality=rare
-price=600
+price=120
 abs=1,2
-requires_stat=defense,6
-requires_stat=physical,4
-bonus=poise,6
+requires_stat=defense,4
+requires_stat=physical,2
+bonus=poise,3
 
 [item]
 id=71
@@ -90,11 +90,11 @@ name=Sniper Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=4
 quality=rare
-price=600
+price=120
 abs=1
-requires_stat=defense,6
-requires_stat=offense,4
-bonus=avoidance,12
+requires_stat=defense,3
+requires_stat=offense,3
+bonus=avoidance,6
 
 [item]
 id=72
@@ -102,9 +102,9 @@ name=Archwizard Cloth Sandals
 INCLUDE items/base/armor/cloth/feet.txt
 level=4
 quality=rare
-price=600
+price=120
 abs=0,1
-requires_stat=defense,6
+requires_stat=defense,2
 requires_stat=mental,4
 bonus=mp_regen,3
 
@@ -114,10 +114,10 @@ name=Warlord Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=4
 quality=rare
-price=400
+price=100
 abs=1,2
-requires_stat=defense,6
-requires_stat=physical,4
+requires_stat=defense,4
+requires_stat=physical,2
 bonus=crit,3
 
 [item]
@@ -126,10 +126,10 @@ name=Sniper Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=4
 quality=rare
-price=400
+price=100
 abs=1
-requires_stat=defense,6
-requires_stat=offense,4
+requires_stat=defense,3
+requires_stat=offense,3
 bonus=accuracy,6
 
 [item]
@@ -138,45 +138,44 @@ name=Archwizard Cloth Gloves
 INCLUDE items/base/armor/cloth/hands.txt
 level=4
 quality=rare
-price=400
+price=100
 abs=0,1
-requires_stat=defense,6
+requires_stat=defense,2
 requires_stat=mental,4
 bonus=mp_regen,6
 
 [item]
 id=76
-name=Warlord Cloth Sash
+name=Master Leather Belt
 INCLUDE items/base/armor/belt.txt
 level=4
 quality=rare
-price=800
-requires_stat=defense,6
-requires_stat=physical,4
+price=200
+requires_stat=defense,4
+requires_stat=physical,2
 bonus=hp_regen,75
 
 [item]
 id=77
-name=Sniper Cloth Sash
-INCLUDE items/base/armor/belt.txt
+name=Master Pendant
+INCLUDE items/base/necklaces/gold_1.txt
 level=4
 quality=rare
-price=800
-requires_stat=defense,6
-requires_stat=offense,4
-bonus=avoidance,9
+price=200
+requires_stat=defense,3
+requires_stat=offense,3
+bonus=avoidance,3
 
 [item]
 id=78
-name=Archwizard Cloth Sash
-INCLUDE items/base/armor/belt.txt
+name=Master Spellbook
+INCLUDE items/base/misc/spellbook.txt
 level=4
 quality=rare
-price=800
-requires_stat=defense,6
+price=200
+requires_stat=defense,2
 requires_stat=mental,4
 bonus=mp_regen,6
-
 
 [item]
 id=79
@@ -184,9 +183,9 @@ name=Warlord Dagger
 INCLUDE items/base/weapons/melee/dagger.txt
 level=4
 quality=rare
-price=1600
+price=400
 dmg_melee=25,30
-requires_stat=physical,10
+requires_stat=physical,8
 bonus=dmg_melee_min,15
 bonus=dmg_melee_max,15
 
@@ -196,9 +195,9 @@ name=Sniper Slingshot
 INCLUDE items/base/weapons/ranged/slingshot.txt
 level=4
 quality=rare
-price=1600
-dmg_ranged=40,45
-requires_stat=offense,10
+price=400
+dmg_ranged=25,30
+requires_stat=offense,8
 bonus=dmg_ranged_min,15
 bonus=dmg_ranged_max,15
 
@@ -208,9 +207,9 @@ name=Archwizard Wand
 INCLUDE items/base/weapons/magic/wand.txt
 level=4
 quality=rare
-price=1600
+price=400
 dmg_ment=25,30
-requires_stat=mental,10
+requires_stat=mental,8
 bonus=dmg_ment_min,15
 bonus=dmg_ment_max,15
 
@@ -220,9 +219,9 @@ name=Templar Wood Buckler
 INCLUDE items/base/shields/wood.txt
 level=4
 quality=rare
+price=300
 abs=2
-requires_stat=defense,8
-price=1200
+requires_stat=defense,6
 bonus=absorb_max,3
 
 [item]
@@ -231,8 +230,9 @@ name=Master Fire Ring
 INCLUDE items/base/rings/gold_5.txt
 level=4
 quality=rare
-price=2800
-bonus=fire_resist,15
+price=400
+requires_level=2
+bonus=fire_resist,6
 
 [item]
 id=84
@@ -240,8 +240,9 @@ name=Master Ice Ring
 INCLUDE items/base/rings/silver_4.txt
 level=4
 quality=rare
-price=2800
-bonus=ice_resist,15
+price=400
+requires_level=2
+bonus=ice_resist,6
 
 [item]
 id=85
@@ -249,8 +250,9 @@ name=Master Lightning Ring
 INCLUDE items/base/rings/silver_5.txt
 level=4
 quality=rare
-price=2800
-bonus=lightning_resist,15
+price=400
+requires_level=2
+bonus=lightning_resist,6
 
 [item]
 id=86
@@ -258,8 +260,9 @@ name=Master Dark Ring
 INCLUDE items/base/rings/gold_3.txt
 level=4
 quality=rare
-price=2800
-bonus=dark_resist,15
+price=400
+requires_level=2
+bonus=dark_resist,6
 
 [item]
 id=87
@@ -267,8 +270,9 @@ name=Master Experience Ring
 INCLUDE items/base/rings/silver_2.txt
 level=4
 quality=rare
-price=2800
-bonus=xp_gain,15
+price=400
+requires_level=2
+bonus=xp_gain,3
 
 [item]
 id=88
@@ -276,8 +280,9 @@ name=Master Wealth Ring
 INCLUDE items/base/rings/gold_2.txt
 level=4
 quality=rare
-price=2800
-bonus=currency_find,15
+price=400
+requires_level=2
+bonus=currency_find,6
 
 [item]
 id=89
@@ -285,96 +290,7 @@ name=Master Treasure Ring
 INCLUDE items/base/rings/gold_4.txt
 level=4
 quality=rare
-price=2800
+price=400
+requires_level=2
 bonus=item_find,15
-
-# unique items
-[item]
-id=90
-name=Krolan's Pick
-flavor=Sharp enough to cut through stone.
-INCLUDE items/base/weapons/melee/dagger.txt
-level=4
-quality=unique
-price=3200
-dmg_melee=25,30
-requires_stat=physical,10
-bonus=dmg_melee_min,20
-bonus=dmg_melee_max,20
-bonus=crit,1
-bonus=currency_find,10
-
-[item]
-id=91
-name=Goblin Branch
-flavor=Mana flows inside its primitive exterior.
-INCLUDE items/base/weapons/magic/wand.txt
-level=4
-quality=unique
-price=3200
-dmg_ment=25,30
-requires_stat=mental,10
-bonus=dmg_ment_min,20
-bonus=dmg_ment_max,20
-bonus=mp_regen,10
-bonus=lightning_resist,5
-
-[item]
-id=92
-name=Ardwen's Gloves
-flavor=These hands built a village.
-INCLUDE items/base/armor/cloth/hands.txt
-level=4
-quality=unique
-price=800
-abs=1,2
-requires_stat=offense,4
-requires_stat=defense,6
-bonus=absorb_min,2
-bonus=accuracy,5
-bonus=poise,5
-bonus=xp_gain,10
-
-[item]
-id=93
-name=Blood Tunic
-flavor=When worn, this shirt heats the wearers veins.
-INCLUDE items/base/armor/cloth/chest.txt
-level=4
-quality=unique
-price=2400
-abs=3
-requires_stat=physical,4
-requires_stat=defense,6
-bonus=hp,100
-bonus=hp_regen,100
-
-[item]
-id=94
-name=Dark Steppers
-flavor=Dancing through the shadows.
-INCLUDE items/base/armor/cloth/feet.txt
-level=4
-quality=unique
-price=1200
-abs=1,2
-requires_stat=offense,4
-requires_stat=defense,6
-bonus=avoidance,15
-bonus=dark_resist,10
-
-[item]
-id=95
-name=Segate's Tri-pants
-flavor=These ragged trousers are covered in scorch marks, yet are cold to the touch.
-INCLUDE items/base/armor/cloth/legs.txt
-level=4
-quality=unique
-price=1600
-abs=1,2
-requires_stat=mental,4
-requires_stat=defense,6
-bonus=fire_resist,10
-bonus=ice_resist,10
-bonus=lightning_resist,10
 

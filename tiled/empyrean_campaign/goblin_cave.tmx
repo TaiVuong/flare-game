@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="isometric" renderorder="right-down" width="48" height="48" tilewidth="64" tileheight="32" backgroundcolor="#000000" nextobjectid="38">
  <properties>
+  <property name="hero_pos" value="18,46"/>
   <property name="music" value="music/cave_theme.ogg"/>
   <property name="tileset" value="tilesetdefs/tileset_cave.txt"/>
   <property name="title" value="Goblin Cave"/>
  </properties>
- <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15">
+ <tileset firstgid="1" name="collision" tilewidth="64" tileheight="32" tilecount="15" columns="15">
   <image source="../cave/tiled_collision.png" width="960" height="32"/>
  </tileset>
- <tileset firstgid="16" name="cave" tilewidth="64" tileheight="128" tilecount="240">
+ <tileset firstgid="16" name="cave" tilewidth="64" tileheight="128" tilecount="240" columns="16">
   <image source="../cave/tiled_cave.png" width="1024" height="1920"/>
  </tileset>
- <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8">
+ <tileset firstgid="256" name="set_rules" tilewidth="64" tileheight="32" tilecount="8" columns="2">
   <image source="../cave/set_rules.png" width="128" height="128"/>
  </tileset>
- <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="128" tileheight="64" tilecount="2">
+ <tileset firstgid="264" name="tiled_cave_2x2" tilewidth="128" tileheight="64" tilecount="2" columns="2">
   <tileoffset x="0" y="16"/>
   <image source="../cave/tiled_cave_2x2.png" width="256" height="64"/>
  </tileset>
@@ -175,55 +176,65 @@
 </data>
  </layer>
  <objectgroup name="event">
-  <object id="1" name="to Goblin Camp" type="on_trigger" x="544" y="1504" width="128" height="32">
+  <object id="1" name="to Goblin Camp" type="event" x="544" y="1504" width="128" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
-    <property name="intermap" value="maps/goblin_camp.txt,36,26"/>
+    <property name="intermap" value="maps/goblin_camp.txt,36,27"/>
     <property name="tooltip" value="Goblin Camp"/>
    </properties>
   </object>
-  <object id="18" name="Cave wind sound effect" type="on_load" x="0" y="0" width="32" height="32">
+  <object id="18" name="Cave wind sound effect" type="event" x="0" y="0" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_wind_loop.ogg"/>
    </properties>
   </object>
-  <object id="21" name="River sound" type="on_load" x="352" y="640" width="32" height="32">
+  <object id="21" name="River sound" type="event" x="352" y="640" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
-  <object id="22" name="River sound" type="on_load" x="1120" y="384" width="32" height="32">
+  <object id="22" name="River sound" type="event" x="1120" y="384" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/river_loop.ogg"/>
    </properties>
   </object>
-  <object id="23" name="Water dripping" type="on_load" x="544" y="160" width="32" height="32">
+  <object id="23" name="Water dripping" type="event" x="544" y="160" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
-  <object id="24" name="Water dripping" type="on_load" x="640" y="800" width="32" height="32">
+  <object id="24" name="Water dripping" type="event" x="640" y="800" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
-  <object id="25" name="Water dripping" type="on_load" x="800" y="1248" width="32" height="32">
+  <object id="25" name="Water dripping" type="event" x="800" y="1248" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
-  <object id="26" name="Water dripping" type="on_load" x="192" y="1216" width="32" height="32">
+  <object id="26" name="Water dripping" type="event" x="192" y="1216" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
-  <object id="27" name="Water dripping" type="on_load" x="1248" y="864" width="32" height="32">
+  <object id="27" name="Water dripping" type="event" x="1248" y="864" width="32" height="32">
    <properties>
+    <property name="activate" value="on_load"/>
     <property name="soundfx" value="soundfx/environment/cave_droplets_loop.ogg"/>
    </properties>
   </object>
-  <object id="28" name="Treasure Chest" type="on_trigger" x="96" y="160" width="32" height="32">
+  <object id="28" name="Treasure Chest" type="event" x="96" y="160" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_2.txt"/>
     <property name="loot_count" value="3,4"/>
@@ -233,8 +244,9 @@
     <property name="tooltip" value="Treasure Chest"/>
    </properties>
   </object>
-  <object id="29" name="Barrel" type="on_trigger" x="352" y="384" width="32" height="32">
+  <object id="29" name="Barrel" type="event" x="352" y="384" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_1.txt"/>
     <property name="mapmod" value="object,11,12,178"/>
@@ -243,8 +255,9 @@
     <property name="tooltip" value="Barrel"/>
    </properties>
   </object>
-  <object id="30" name="Crate" type="on_trigger" x="928" y="128" width="32" height="32">
+  <object id="30" name="Crate" type="event" x="928" y="128" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_1.txt"/>
     <property name="mapmod" value="object,29,4,179"/>
@@ -253,8 +266,9 @@
     <property name="tooltip" value="Crate"/>
    </properties>
   </object>
-  <object id="31" name="Crate" type="on_trigger" x="1120" y="1088" width="32" height="32">
+  <object id="31" name="Crate" type="event" x="1120" y="1088" width="32" height="32">
    <properties>
+    <property name="activate" value="on_trigger"/>
     <property name="hotspot" value="location"/>
     <property name="loot" value="loot/level_1.txt"/>
     <property name="mapmod" value="object,35,34,179"/>
@@ -265,103 +279,118 @@
   </object>
  </objectgroup>
  <objectgroup name="enemy">
-  <object id="4" type="goblin" x="128" y="1152" width="160" height="192">
+  <object id="4" type="enemy" x="128" y="1152" width="160" height="192">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="5" type="goblin" x="672" y="1088" width="288" height="352">
+  <object id="5" type="enemy" x="672" y="1088" width="288" height="352">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2,3"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="7" type="goblin" x="128" y="672" width="160" height="128">
+  <object id="7" type="enemy" x="128" y="672" width="160" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="8" type="goblin" x="1120" y="960" width="192" height="192">
+  <object id="8" type="enemy" x="1120" y="960" width="192" height="192">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="9" type="goblin" x="960" y="160" width="192" height="128">
+  <object id="9" type="enemy" x="960" y="160" width="192" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="10" type="goblin" x="512" y="128" width="256" height="128">
+  <object id="10" type="enemy" x="512" y="128" width="256" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="11" type="goblin" x="704" y="768" width="192" height="160">
+  <object id="11" type="enemy" x="704" y="768" width="192" height="160">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="1,2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="12" type="goblin" x="640" y="448" width="256" height="128">
+  <object id="12" type="enemy" x="640" y="448" width="256" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="13" type="goblin_spearman" x="256" y="544" width="32" height="32">
+  <object id="13" type="enemy" x="256" y="544" width="32" height="32">
    <properties>
+    <property name="category" value="goblin_spearman"/>
     <property name="level" value="2"/>
     <property name="number" value="1"/>
    </properties>
   </object>
-  <object id="14" type="goblin_spearman" x="992" y="352" width="32" height="32">
+  <object id="14" type="enemy" x="992" y="352" width="32" height="32">
    <properties>
+    <property name="category" value="goblin_spearman"/>
     <property name="level" value="2"/>
     <property name="number" value="1"/>
    </properties>
   </object>
-  <object id="32" type="goblin_chief" x="160" y="160" width="32" height="32">
+  <object id="32" type="enemy" x="160" y="160" width="32" height="32">
    <properties>
+    <property name="category" value="goblin_chief"/>
     <property name="level" value="2"/>
     <property name="number" value="1"/>
    </properties>
   </object>
-  <object id="33" type="goblin" x="96" y="192" width="160" height="128">
+  <object id="33" type="enemy" x="96" y="192" width="160" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="34" type="goblin" x="256" y="96" width="128" height="160">
+  <object id="34" type="enemy" x="256" y="96" width="128" height="160">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="35" type="goblin" x="1120" y="448" width="192" height="160">
+  <object id="35" type="enemy" x="1120" y="448" width="192" height="160">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>
    </properties>
   </object>
-  <object id="36" type="goblin" x="352" y="416" width="160" height="128">
+  <object id="36" type="enemy" x="352" y="416" width="160" height="128">
    <properties>
+    <property name="category" value="goblin"/>
     <property name="level" value="1"/>
     <property name="number" value="2"/>
     <property name="wander_radius" value="1"/>

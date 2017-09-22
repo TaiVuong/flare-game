@@ -39,9 +39,9 @@ def extract(filename):
     infile = codecs.open(filename, encoding='UTF-8', mode='r')
     triggers = [
         'msg', 'him', 'her', 'you', 'name', 'title', 'tooltip',
-        'power_desc', 'quest_text', 'description', 'slot_name',
+        'power_desc', 'quest_text', 'description',
         'tab_title', 'currency_name', 'flavor', 'topic', 'option',
-        'caption'
+        'caption', 'text'
     ]
     plain_text = [
         'msg', 'him', 'her', 'you', 'name', 'title', 'tooltip',
@@ -107,7 +107,6 @@ extract('../items/items.txt')
 extract('../items/types.txt')
 extract('../items/sets.txt')
 extract('../items/qualities.txt')
-extract('../menus/inventory.txt')
 extract('../menus/powers.txt')
 extract('../powers/effects.txt')
 extract('../powers/powers.txt')
@@ -118,7 +117,7 @@ extract('../engine/hero_options.txt')
 extract('../engine/titles.txt')
 extract('../engine/equip_flags.txt')
 
-for folder in ['enemies', 'maps', 'quests', 'npcs', 'cutscenes']:
+for folder in ['enemies', 'maps', 'quests', 'npcs', 'cutscenes', 'books']:
     target = os.path.join('..', folder)
     if os.path.isdir(target):
         for filename in sorted(os.listdir(target)):
